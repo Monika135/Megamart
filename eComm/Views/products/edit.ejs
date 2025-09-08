@@ -1,0 +1,78 @@
+
+
+
+<%-include("../header")%>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+    .form-group input[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .form-group input[type="submit"]:hover {
+        background-color: #4cae4c;
+    }
+</style>
+
+<div class="container">
+<% data.forEach((item) => { %>
+    <form action="/products/edit" method="post">
+        <input type="hidden" name="_id" value="<%= item._id %>">
+
+        <div class="form-group">
+            <label for="name-<%= item._id %>">Name</label>
+            <input type="text" id="name-<%= item._id %>" name="name" value="<%= item.name %>">
+        </div>
+        <div class="form-group">
+            <label for="price-<%= item._id %>">Price</label>
+            <input type="text" id="price-<%= item._id %>" name="price" value="<%= item.price %>">
+        </div>
+        <div class="form-group">
+            <label for="desc-<%= item._id %>">Description</label>
+            <textarea id="desc-<%= item._id %>" name="desc"><%= item.desc %></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Edit">
+        </div>
+    </form>
+<% }) %>
+</div>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .welcome-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .welcome-container p {
+            margin-bottom: 30px;
+        }
+
+        .welcome-container a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .welcome-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h2>Welcome <%=name%></h2>
+              <a href="/users/logout">Logout</a>&nbsp;&nbsp;
+              <a href="/users/Profile">Home</a>
+        <p>Thank you for logging in! You are now on the welcome page.</p>
+        <p>Explore our website and enjoy your experience.</p>
+        <p>If you need any assistance, <a href="contact.html">contact us</a>.</p>
+    </div>
+
+</body>
+</html>

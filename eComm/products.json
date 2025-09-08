@@ -1,0 +1,44 @@
+[
+{
+    "pid":1,
+    "name":"First Product",
+    "price":490,
+    "description":"This is first product",
+    "image":"https://picsum.photos/300/300"
+},
+{
+    "pid":2,
+    "name":"Second Product",
+    "price":590,
+    "description":"This is Second product",
+    "image":"https://picsum.photos/300/300"
+},
+{
+    "pid":3,
+    "name":"Third Product",
+    "price":230,
+    "description":"This is Third product",
+    "image":"https://picsum.photos/300/300"
+},
+{
+    "pid":4,
+    "name":"Forth Product",
+    "price":150,
+    "description":"This is Forth product",
+    "image":"https://picsum.photos/300/300"
+},
+{
+    "pid":5,
+    "name":"Fifth Product",
+    "price":230,
+    "description":"This is Fifth product",
+    "image":"https://picsum.photos/300/300"
+},
+{
+    "pid":6,
+    "name":"Sixth Product",
+    "price":150,
+    "description":"This is Sixth product",
+    "image":"https://picsum.photos/300/300"
+}
+]
